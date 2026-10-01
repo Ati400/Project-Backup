@@ -1,0 +1,221 @@
+/* Make sizing easier to control */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the whole page */
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eef2f3;
+
+    /* Center our application */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* Main mobile-style application */
+.app-container {
+    width: 100%;
+    max-width: 420px;
+
+    min-height: 100vh;
+
+    background-color: white;
+
+    padding: 40px 25px;
+
+    text-align: center;
+}
+
+
+/* Main page title */
+h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Second page title */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Text below page titles */
+.subtitle {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Form labels */
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+/* Form input boxes */
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* Buttons */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #333;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Button when mouse is over it */
+button:hover {
+    background-color: #555;
+}
+
+
+/* Text at the bottom of forms */
+.bottom-text {
+    margin-top: 25px;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Dashboard cards */
+.dashboard-card {
+    text-align: left;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-top: 15px;
+}
+
+/* Password requirement text */
+.password-info {
+    text-align: left;
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Dashboard card titles */
+.dashboard-card h3 {
+    margin-top: 0;
+}
+
+
+/* Profile information box */
+.profile-card {
+    text-align: left;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* Profile labels */
+.profile-card label {
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* Profile information */
+.profile-card p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    color: #555;
+}
+
+
+/* Error messages */
+.error-message {
+    display: none;
+
+    color: red;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+
+/* Successful account message */
+.success-message {
+    display: none;
+
+    color: green;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+
+/*
+On a larger computer screen,
+make the website look like a mobile application.
+*/
+@media (min-width: 600px) {
+
+    .app-container {
+        min-height: 700px;
+
+        border-radius: 20px;
+
+        box-shadow:
+            0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+}
